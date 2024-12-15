@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Gherkin Syntax (requirements)
+    Feature: Personal Portfolio Website
+      As a developer
+      I want a personal portfolio website
+      So that I can showcase my skills and projects
+
+    Scenario: Navigating through sections
+      Given the user is on the portfolio homepage
+      When the user clicks on a navigation link
+      Then they should be taken to the relevant section
+      
+    Scenario: Viewing About Me
+      Given the user is on the About Me section
+      Then they should see a brief description and photo of the developer
+
+    Scenario: Viewing Projects
+      Given the user is on the Projects section
+      Then they should see a list of projects with descriptions
+
+    Scenario: Viewing Favorite Links
+      Given the user is on the Favorite Links section
+      Then they should see a list of links to external sites
+      
+    Scenario: Viewing Embedded Media
+      Given the user is on the Embedded Media section
+      Then they should see media files like images or videos
+    -->
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#links">Favorite Links</a></li>
+                <li><a href="#media">Embedded Media</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h1>About Me</h1>
+            <p>Hello! I'm [Your Name], a passionate developer. Welcome to my portfolio site!</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>Project 1: <a href="#">Project Link</a></li>
+                <li>Project 2: <a href="#">Project Link</a></li>
+            </ul>
+        </section>
+
+        <section id="links">
+            <h2>Favorite Links</h2>
+            <ul>
+                <li><a href="https://github.com">GitHub</a></li>
+                <li><a href="https://developer.mozilla.org">MDN Web Docs</a></li>
+            </ul>
+        </section>
+
+        <section id="media">
+            <h2>Embedded Media</h2>
+            <img src="assets/example.jpg" alt="Example Image">
+            <video controls>
+                <source src="assets/example.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 My Portfolio</p>
+    </footer>
+</body>
+</html>
